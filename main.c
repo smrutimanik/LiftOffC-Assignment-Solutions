@@ -2,28 +2,47 @@
 
 int main()
 {
-    int p, q;
-    int sum, sub, mul, mod;
-    float div;
+    char ch;
+    /* Enter any alphabet */
+    printf("enter any alphabet::");
+    scanf("%c", &ch);
+    /*switch value of ch*/
+    switch(ch)
+    {
+        case 'a':
+        printf("vowel");
+        break;
+        case 'e':
+        printf("vowel");
+        break;
+        case 'i':
+        printf("vowel");
+        break;
+        case 'o':
+        printf("vowel");
+        break;
+        case 'u':
+        printf("vowel");
+        break;
+        case 'A':
+        printf("vowel");
+        break;
+        case 'E':
+        printf("vowel");
+        break;
+        case 'I':
+        printf("vowel");
+        break;
+        case 'O':
+        printf("vowel");
+        break;
+        case 'U':
+        printf("vowel");
+        break;
+        deafult:
+            printf("consonant");
+            break;
 
-    /* Input two numbers from user */
-    printf("Enter any two numbers::\n");
-    scanf("%d%d", &p, &q, "\n");
-
-    /* Perform all arithmetic operations */
-    sum = p + q;
-    sub = p - q;
-    mul = p * q;
-    div = (float)p / q;
-    mod = p % q;
-
-    /* Print result of all arithmetic operations */
-    printf("\n");
-    printf("SUM        %d + %d = %d\n", p, q, sum);
-    printf("DIFFERENCE %d - %d = %d\n", p, q, sub);
-    printf("PRODUCT    %d * %d = %d\n", p, q, mul);
-    printf("QUOTIENT   %d / %d = %f\n", p, q, div);
-    printf("MODULUS    %d %% %d = %d\n", p, q, mod);
-
+    }
     return 0;
 }
